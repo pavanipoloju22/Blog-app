@@ -3,7 +3,10 @@
   "builds": [
     {
       "src": "blogwebapp/wsgi.py",
-      "use": "@vercel/python"
+      "use": "@vercel/python",
+      "config": {
+        "runtime": "python3.12.6"
+      }
     }
   ],
   "routes": [
@@ -13,4 +16,3 @@
     }
   ]
 }
-
